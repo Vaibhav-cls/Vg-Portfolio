@@ -24,6 +24,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -70,8 +71,19 @@ header {
 
 .orange {
     color: rgb(255, 231, 18);
+    animation:vibrate 0.2s linear infinite;
 }
-
+@keyframes vibrate {
+    0% {
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+  }
 nav ul {
     list-style-type: none;
     display: flex;
@@ -105,7 +117,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(83, 95, 255, 0.2);
 }
 
 h2 {
@@ -201,7 +213,6 @@ section {
 }
 
 .Education_section .cards .card-style {
-    background-color: white;
     position: relative;
     margin: 5px;
     margin-right: 30px;
@@ -228,6 +239,9 @@ section {
     position: absolute;
     right: 10px;
     bottom: 10px;
+}
+.ieee:hover{
+    color: blue;
 }
 
 .skills_section {
@@ -447,8 +461,8 @@ section {
     transition: all 0.3s ease;
     backdrop-filter: blur(3px);
     opacity: 0;
-    z-index: -4;
-    transform: translateY(-250%);
+    z-index: -5;
+    transform: translateY(-100%);
 }
 
 .project:hover .project-info {
@@ -471,7 +485,8 @@ section {
 .project-info a {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
+    margin-right: 5px;
+    padding: 10px 15px;
     background-color: #f44336;
     color: #fff;
     text-decoration: none;
@@ -566,12 +581,10 @@ section {
 }
 
 .social-icons a {
-    color: #fff;
     text-decoration: none;
     font-size: 24px;
     transition: all 0.3s ease;
 }
-
 .social-icons a:hover {
     color: #f44336;
     transform: scale(1.1);
