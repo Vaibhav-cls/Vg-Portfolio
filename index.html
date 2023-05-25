@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link id="styleSheet" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio - Vaibhav Ghanekar</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header-container">
             <div class="header-right">
                 <h1 onmouseover="color_change()" onmouseout="original()"><span
@@ -26,17 +26,17 @@
                         <li><a href="#about_section"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#project_section"><i class="fa fa-file"></i>Projects</a></li>
                         <li><a href="#contact_section"><i class="fa fa-phone"></i>Contact me</a></li>
+                        <li><i class="material-icons" id="mode" style="cursor: pointer;">light_mode</i></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
+    <main id="mains">
         <section id="about_section">
             <div class="container">
                 <div class="image-area cards">
                     <img src="images/front.png" alt="">
-                    <im src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425__340.png" alt="">
                 </div>
                 <div class="text-area cards">
                     <h2>About Me</h2>
@@ -159,6 +159,7 @@
                     </p>
                     <p><i class="fa fa-arrow-right"></i> 2 <i class="fa fa-star"></i> C++ Coder at HackerRank</p>
                     <p><i class="fa fa-arrow-right"></i> Finalist of TechGig Code Gladiators 2022</p>
+                    <p><i class="fa fa-arrow-right"></i> Won the institutional  level of Google Cloud Solving for India Hackathon and qualified for regional round</p>
                 </div>
                 <div class="cards">
                     <h4>Certifications</h4>
@@ -303,7 +304,7 @@
         </div>
     </section>
     <footer>
-        <a href="https://vaibhav-cls.github.io/Vg-Portfolio/"><img src="images/favicon.png" alt="logo" class="logo"></a>
+        <img src="images/favicon.png" alt="logo" class="logo" id="reload" onclick="rel()">
         <p>2023 Vaibhav Ghanekar</p>
         <a href="#top"><img src="images/angles-up-solid (1).svg"></a>
     </footer>
