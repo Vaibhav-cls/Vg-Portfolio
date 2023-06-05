@@ -405,7 +405,9 @@ section {
         width: 93%;
     }
 }
-
+.star{
+    color: #FFD700;
+}
 .others .container {
     display: flex;
     justify-content: space-between;
