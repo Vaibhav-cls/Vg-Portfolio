@@ -596,8 +596,25 @@ section {
     transition: all 0.3s ease;
 }
 .social-icons a:hover {
-    color: #f44336;
     transform: scale(1.1);
+}
+.social-icons .inst:hover{
+    background: -webkit-linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bdf);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-icons .face:hover{
+    color: #4267B2;
+}
+.social-icons .linked:hover{
+    color: #0072b1;
+}
+.social-icons .git:hover{
+    color: white;
+}
+.social-icons .mail:hover{
+    color: #c71610;
 }
 
 footer {
