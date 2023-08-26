@@ -1,35 +1,48 @@
-window.addEventListener('scroll',reveal);
-window.addEventListener('scroll',reveali);
-function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var noDragElements = document.querySelectorAll('.no-drag');
 
-    for(var i=0;i<reveals.length;i++){
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 50;
-
-        if(revealtop<windowheight - revealpoint){
-            reveals[i].classList.add('active');
-        }
-        else{
-            reveals[i].classList.remove('active');
-        }
+    for (var i = 0; i < noDragElements.length; i++) {
+      noDragElements[i].addEventListener('dragstart', function(e) {
+        e.preventDefault();
+      });
     }
+  });
+
+var x = document.getElementById("fname");
+var y = document.getElementById("lname");
+let toggler="black";
+function color_change() {
+    x.style.color = toggler;
+    y.style.color = "#f44336";
+}
+function original() {
+    x.style.color = "#f44336";
+    y.style.color = toggler;
 }
 
-function reveali(){
-    var reveals = document.querySelectorAll('.revealio');
-
-    for(var i=0;i<reveals.length;i++){
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 200;
-
-        if(revealtop<windowheight - revealpoint){
-            reveals[i].classList.add('active');
-        }
-        else{
-            reveals[i].classList.remove('active');
-        }
+var button = document.getElementById('mode');
+var sheets = document.getElementById('styleSheet');
+button.addEventListener("click", function () {
+    if (sheets.getAttribute("href") === "style.css") {
+        button.innerHTML = "dark_mode";
+        sheets.setAttribute("href","dark.css");
+        toggler="white";
+        color_change();
+        original();
     }
+    else{
+        button.innerHTML="light_mode";
+        sheets.setAttribute("href","style.css");
+        toggler="black";
+        color_change();
+        original();
+    }
+})
+let Reload = document.getElementById("reload");
+function rel(){
+    location.reload();
 }
+

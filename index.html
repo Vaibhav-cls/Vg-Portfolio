@@ -3,163 +3,331 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elsie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4ef16beb9a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link id="styleSheet" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
-    <title></title>
+    <title>Portfolio - Vaibhav Ghanekar</title>
 </head>
 
 <body>
-    <div class="cd-head"><h1 class="head">PolyLingo</h1></div>
-    <div class="landing-sc">
-        
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo.webp" alt="bg_logo">
-            </div>
-            <div class="heading">
-                <h1>Master a New Language Today!</h1>
-            </div>
-            <div class="btn-container">
-                <a href="#contact-us"><button class="btn-1">Get Started</button></a>
-                <a href="#learn-more"><button class="btn-2">Learn More</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="quote-sc">
-        <div class="container">
-            <div class="quote reveal"> 
-                <p>Unlocking Passions</p>
-                <h2>Embark on an unforettable language adventure with our engaging and effective platform!
-                </h2>
-            </div>
-            <div class="img-rt">
-                <img src="assets/body-bg.png" alt="body_image">
+    <header id="header">
+        <div class="header-container">
+            <div class="header-right">
+                <h1 onmouseover="color_change()" onmouseout="original()"><span
+                        style="color:#f44336;transition:all 0.2s ease-in-out;" id="fname">Vaibhav</span> <span
+                        style="transition:all 0.2s ease-in-out;" id="lname">Ghanekar</span></h1>
+                <p>Front-End Web Developer <span class="orange">|</span> Competitive Coder <span class="orange">|</span>
+                    Learning DSA</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about_section"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#project_section"><i class="fa fa-file"></i>Projects</a></li>
+                        <li><a href="#contact_section"><i class="fa fa-phone"></i>Contact me</a></li>
+                        <!--li><i class="material-icons" id="mode" style="cursor: pointer;">light_mode</i></li-->
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-    <section id="learn-more">
-        <div class="specs">
+    </header>
+    <main id="mains">
+        <section id="about_section">
             <div class="container">
-                <div class="card reveal">
-
-                    <img src="assets/card_img0.png">
-
-                    <div class="details">
-                        <h2>Diverse Languages</h2>
-                        <h3>Explore a wide variety of languages and cultures from around the world.</h3>
+                <div class="image-area cards no-drag">
+                    <img src="images/front.png" alt="profile-image">
+                </div>
+                <div class="text-area cards">
+                    <h2>About Me</h2>
+                    <p style="margin-bottom:0px;">Hello, I'm Vaibhav Ghanekar, a passionate computer science and
+                        engineering
+                        student pursuing my B.Tech degree.<br></p>
+                    <p>With a strong foundation in HTML, CSS, JavaScript, C and C++, I'm excited to embark on a career
+                        that
+                        will allow me to apply my technical skills and problem-solving
+                        abilities to create innovative solutions.
+                    </p>
+                    <div>
+                        <p class="expertise">My <span>Expertise</span></p>
+                        <div class="logos no-drag">
+                            <img src="images/HTML5.svg.png" alt="html_logo">
+                            <img src="images/CSS3.svg.png" alt="css_logo">
+                            <img src="images/js.png" alt="js_logo">
+                            <img src="images/C.png" alt="c_logo">
+                            <img src="images/c++.png" alt="cplusplus_logo" style="width: 40px;height: 43px;">
+                        </div>
+                        <a href="https://drive.google.com/file/d/1XYWZW3x3VrRm42gQ-5MYTwZCWJXx8LBT/view?usp=share_link"
+                            target="_blank"><button>Download Resume</button></a>
                     </div>
                 </div>
-                <div class="card reveal">
+            </div>
 
-                    <img src="assets/card_img.webp">
-
-                    <div class="details">
-                        <h2>Interactive Games</h2>
-                        <h3>Challenge yourself with fun quizzes and production exercises.</h3>
+        </section>
+        <section class="Education_section">
+            <h2>Education</h2>
+            <div class="cards">
+                <div class="card-style">
+                    <h4>Senior School</h4>
+                    <p>Little Flower Higher Secondary School</p>
+                    <p>2019-2020</p>
+                    <a href="https://www.facebook.com/LFSraipur/" target="_blank"><i
+                            class="fa fa-external-link external-link"></i></a>
+                </div>
+                <div class="card-style">
+                    <h4>Bachelor of technology</h4>
+                    <p>Shri Shankaracharya Institute of Professional Management and technology</p>
+                    <p><a href="https://ssipmt.com/IEEE_student_branch.php" target="_blank" class="ieee">Member of
+                            IEEE</a></p>
+                    <p>2021-2025</p>
+                    <a href="https://ssipmt.com/" target="_blank"><i class="fa fa-external-link external-link"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skills_section">
+                <div class="skills_head">
+                    <h2>My <span>Skills</span></h2>
+                    <p>Here are my skills to represent my Expertise</p>
+                </div>
+                <div class="skills_main">
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>HTML</p>
+                            <P>70%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>CSS</p>
+                            <P>95%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>Java Script</p>
+                            <P>50%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>C</p>
+                            <P>85%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="c"></span>
+                        </div>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>C++</p>
+                            <P>80%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="cplusplus"></span>
+                        </div>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="info">
+                            <p>Microsoft PowerPoint</p>
+                            <P>93%</P>
+                        </div>
+                        <div class="bar">
+                            <span class="microsoft"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="card reveal">
-
-                    <img src="assets/card_img2.webp">
-
-                    <div class="details">
-                        <h2>Proven Methods</h2>
-                        <h3>Develop language skills through innovative learning strategies.</h3>
+                <div class="note">
+                    * The skill ratings are based on the Linkedin skills test
+                </div>
+            </div>
+        </section>
+        <section class="others">
+            <div class="container">
+                <div class="cards">
+                    <h4>Achievements</h4>
+                    <p><i class="fa fa-arrow-right"></i> 4 <i class="fa fa-star star"></i> Competitive Coder at HackerRank
+                    </p>
+                    <p><i class="fa fa-arrow-right"></i> 5 <i class="fa fa-star star"></i> C++ Coder at HackerRank</p>
+                    <p><i class="fa fa-arrow-right"></i> Finalist of TechGig Code Gladiators 2022</p>
+                    <p><i class="fa fa-arrow-right"></i> Won the institutional  level of Google Cloud Solving for India Hackathon and qualified for regional round</p>
+                </div>
+                <div class="cards">
+                    <h4>Certifications</h4>
+                    <p><i class="fa fa-arrow-right"></i> BoltIot's Front-End Web Development Training Program</p>
+                </div>
+                <div class="cards" style="margin-right:0px">
+                    <h4>internships</h4>
+                    <p><a href="https://drive.google.com/file/d/1V_aQW4qH1BSvK-2MBrXGhmSi9RZhoYEh/view?usp=drivesdk" target="_blank" class="links">
+                        <i class="fa fa-arrow-right"></i> BoltIot Web development internship</a>
+                    </p>
+                    <p><a href="https://drive.google.com/file/d/1eAyIoo36L9DexSbNW9cYp8NhHjNhXXs8/view?usp=drivesdk" target="_blank" class="links">
+                        <i class="fa fa-arrow-right"></i> Octanet Web development internship</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="project_section">
+            <h2>Projects</h2>
+            <div class="project_container">
+                <div class="project">
+                    <img src="images/w3schools.JPG" alt="Project 1">
+                    <div class="project-info">
+                        <h3>W3Schools Clone</h3>
+                        <p>This project is my first web-dev project and is
+                            created completely using HTML and CSS. This is the clone of
+                            W3Scools official homepage
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                            <a href="https://github.com/Vaibhav-cls/W3Schools-Clone" target="_blank">View Code <i
+                                    class="fa fa-external-link"></i></a>
+                            <a href="https://vaibhav-cls.github.io/W3Schools-Clone/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a>
+                        </div>
                     </div>
+                </div>
+                <div class="project">
+                    <img src="images/farming.JPG" alt="Project 2">
+                    <div class="project-info">
+                        <h3>AgroSite</h3>
+                        <p>This is the farming e-commerce Website
+                            created using HTML,CSS and JavaScript.
+                            I created this webpage during the GeeksforGeeks Hackathon.
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                            <a href="https://github.com/Vaibhav-cls/Farming-Webiste" target="_blank">View Code <i
+                                    class="fa fa-external-link"></i></a>
+                                    <a href="https://vaibhav-cls.github.io/Farming-Webiste/" target="_blank">Live Project <i
+                                        class="fa fa-external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/inventrom.JPG" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Inventrom Clone</h3>
+                        <p>This is another cloning project which was part of my
+                            internship project, HTML,CSS and Javascript is used in this webpage
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                        <a href="https://github.com/Vaibhav-cls/Inventrom" target="_blank">View Code <i
+                                class="fa fa-external-link"></i></a>
+                                <a href="https://vaibhav-cls.github.io/Inventrom/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a> 
+                            </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/todo.JPG" alt="Project 1">
+                    <div class="project-info">
+                        <h3>To-do List</h3>
+                        <p>This is a very basic webpage of a
+                            to-do list in which you can add new task, delete the out-dated one and
+                            strike through the completed one.
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                        <a href="https://github.com/Vaibhav-ghanekar/OCTANET_JUNE_TASK2" target="_blank">View Code <i
+                                class="fa fa-external-link"></i></a>
+                                <a href="https://vaibhav-ghanekar.github.io/OCTANET_JUNE_TASK2/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/coffee-shop.JPG" alt="Project 5">
+                    <div class="project-info">
+                        <h3>Coffee Shop</h3>
+                        <p>This is a commercial webpage for a coffee shop,
+                            This project is part of my internship Program.
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                        <a href="https://github.com/Vaibhav-cls/Coffee-Shop" target="_blank">View Code <i
+                                class="fa fa-external-link"></i></a>
+                                <a href="https://vaibhav-ghanekar.github.io/OCTANET_JUNE/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/usability.JPG" alt="Project 5">
+                    <div class="project-info">
+                        <h3>Usability Hub clone</h3>
+                        <p>This is a simple clone website of Usability Hub ,
+                            Created using html and css.
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                        <a href="https://github.com/Vaibhav-cls/clone-Usability-Hub" target="_blank">View Code <i
+                                class="fa fa-external-link"></i></a>
+                                <a href="https://vaibhav-cls.github.io/clone-Usability-Hub/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a>
+                                </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/polylingo.JPG" alt="Project 6">
+                    <div class="project-info">
+                        <h3>PolyLingo</h3>
+                        <p>This is a website  for learning languages designed with a good interface and scroll transitions.
+                        </p>
+                        <div style="display:flex;justify-content: space-between;">
+                        <a href="https://github.com/Vaibhav-cls/PolyLingo" target="_blank">View Code <i
+                                class="fa fa-external-link"></i></a>
+                                <a href="https://vaibhav-cls.github.io/PolyLingo/" target="_blank">Live Project <i
+                                    class="fa fa-external-link"></i></a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contact_section">
+        <h2>Contact Me</h2>
+        <div class="container" style="position: relative;">
+            <div class="cards no-drag" style="max-width:400px;">
+                <img src="images/contact1.png" alt="contact_img">
+            </div>
+            <div class="cards details">
+                <div class="information">
+                    <p><i class="fa fa-envelope"></i> Email: vaibhavghanekar19@gmail.com</p>
+                    <p> <i class="fa fa-phone"></i> Mobile Number: +91 9644582521</p>
+                    <div class="symbols">
+                        <p><i class="fa fa-link"></i> Social Media Links:</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/vaibhavghanekar19/?hl=en" target="_blank"><i
+                                    class="fa fa-instagram fa-lg inst"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100011457487169" target="_blank"><i
+                                    class="fa fa-facebook fa-lg face"></i></a>
+                            <a href="https://www.linkedin.com/in/vaibhav-ghanekar-a69a30150/" target="_blank"><i
+                                    class="fa fa-linkedin linked"></i></a>
+                            <a href="https://github.com/Vaibhav-cls" target="_blank"><i
+                                    class="fa fa-github fa-lg git"></i></a>
+                            <a href="mailto: vaibhavghanekar19@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope-o fa-lg mail"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thanks">
+                    <h2 style="max-width:fit-content;">Thanks for Visiting!</h2>
                 </div>
             </div>
         </div>
     </section>
-    <div class="feedback reveal">
-        <div class="container">
-            <div class="cards">
-                <img src="assets/colombian.png" alt="">
-                <h3>This platform made learning a new language incredibly engaging and enjoyable—I never expected to
-                    have this much fun!</h3>
-                <p>~Jessica</p>
-            </div>
-            <div class="cards">
-                <img src="assets/man.png" alt="">
-                <h3>I can’t believe how fast I’m learning and retaining new vocabulary, it’s an absolute game-changer
-                    for my language journey.</h3>
-                <p>~David</p>
-            </div>
-        </div>
-    </div>
-    <section id="contact-us">
-        <div class="contact reveal">
-            <div class="container">
-                <div class="text-field">
-                    <div class="text">
-                        <h2>Ready to broaden your linguistic horizons? Jump into a world of language possibilites!</h2>
-                    </div>
-                    <div class="btn">
-                        <button class="button-1">Start Now</button>
-                        <button class="button-2">Contact Us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="faq reveal">
-        <h2>FAQs</h2>
-        <div class="container">
-            <div class="cards">
-                <h3>Available languages?</h3>
-                <p>We currently offer over 30 languages, including popular ones like Spanish, French, and Chinese.</p>
-            </div>
-            <div class="cards">
-                <h3>Beginner-friendly?</h3>
-                <p>Absolutely! Our platform caters to learners of all levels, from beginners to advanced speakers.</p>
-            </div>
-            <div class="cards">
-                <h3>Monthly subscription?</h3>
-                <p>Yes, our platform offers monthly subscription plans to meet your learning needs and budget.</p>
-            </div>
-        </div>
-    </div>
     <footer>
-        <div class="container">
-            <div class="cards">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Partners</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy 2023 Language Learning Platform. All rights reserved.</p>
-            <div class="social-links">
-                <i class="fa fa-instagram inst"></i>
-                <i class="fa fa-twitter x"></i>
-            </div>
-        </div>
+        <img src="images/favicon.png" alt="logo" class="logo" id="reload" onclick="rel()">
+        <p>2023 Vaibhav Ghanekar</p>
+        <a href="#top"><img src="images/angles-up-solid (1).svg"></a>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
