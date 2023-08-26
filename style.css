@@ -595,9 +595,6 @@ section {
     font-size: 24px;
     transition: all 0.3s ease;
 }
-.social-icons a:hover {
-    transform: scale(1.1);
-}
 .social-icons .inst:hover{
     background: -webkit-linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bdf);
     background-clip: border-box;
