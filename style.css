@@ -573,11 +573,6 @@ section {
     color: blueviolet;
     font-size: 25px;
 }
-
-.social-media i:hover {
-    color: rgb(255, 220, 155);
-}
-
 .social-icons {
     list-style: none;
     margin: 0;
@@ -595,22 +590,25 @@ section {
     font-size: 24px;
     transition: all 0.3s ease;
 }
-.social-icons .inst:hover{
+.inst{
+  padding:2px;
+}
+.inst:hover{
     background: -webkit-linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bdf);
-    background-clip: border-box;
+    bckground-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.social-icons .face:hover{
+.face:hover{
     color: #4267B2;
 }
-.social-icons .linked:hover{
+.linked:hover{
     color: #0072b1;
 }
-.social-icons .git:hover{
+.git:hover{
     color: white;
 }
-.social-icons .mail:hover{
+.mail:hover{
     color: #c71610;
 }
 
