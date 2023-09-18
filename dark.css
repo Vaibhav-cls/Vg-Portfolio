@@ -29,12 +29,19 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(15, 16, 22);
     font-family: 'Montserrat', sans-serif;
     min-width: 396px;
 }
 
 header {
-    background: linear-gradient(to right, #e1d1e1, #d8d5ec, #c9dbf4, #b9e1f4, #afe6ec, #b4e8ed, #b8eaed, #bdecee, #cdecf7, #deedf9, #ebeef6, #f2f2f2);
+    background: hsla(205, 46%, 10%, 1);
+
+background: linear-gradient(45deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
 }
 
 .header-container {
@@ -45,8 +52,6 @@ header {
     padding: 30px 0px;
     margin: 0 auto;
     color: black;
-    background-image: url('https://www.pngall.com/wp-content/uploads/2/Design-PNG-Photo.png');
-    background-size: contain;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.055);
 }
 
@@ -57,6 +62,7 @@ header {
 
 .header-right {
     text-align: center;
+    color: rgb(206, 214, 255);
 }
 
 .header-right h1 {
@@ -72,27 +78,13 @@ header {
 
 .orange {
     color: rgb(255, 231, 18);
-    animation: vibrate 0.2s linear infinite;
-}
-
-@keyframes vibrate {
-    0% {
-        transform: translateY(-2px);
-    }
-
-    50% {
-        transform: translate(0px);
-    }
-
-    100% {
-        transform: translateY(2px);
-    }
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
@@ -105,10 +97,11 @@ nav li {
     margin-right: 60px;
     padding: 0;
     max-width: fit-content;
+    text-align: center;
 }
 
 nav a {
-    color: black;
+    color: rgb(206, 214, 255);
     text-decoration: none;
     font-size: 20px;
     transition: all 0.3s ease;
@@ -121,12 +114,13 @@ nav a:hover,
 .theme{
     transition: 0.3s ease;
 }
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(83, 95, 255, 0.2);
+    color: rgb(206, 214, 255);
+    background-color: rgb(15, 16, 22);
+    box-shadow: 0 0 10px rgba(41, 41, 41, 0.5);
 }
 
 h2 {
@@ -134,7 +128,7 @@ h2 {
     margin: 0 0 20px 0;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: rgb(71, 71, 71);
+    color: rgb(241, 241, 241);
     text-align: center;
 }
 
@@ -143,7 +137,6 @@ section {
 }
 
 #about_section {
-    background-color: rgba(241, 225, 255, 0.767);
     padding: 20px;
 }
 
@@ -156,7 +149,7 @@ section {
 
 .links {
     text-decoration: none;
-    color: black;
+    color: #CED6FF;
     transition: all 0.3s ease;
 }
 
@@ -193,7 +186,7 @@ section {
 
 .expertise {
     width: fit-content;
-    color: #2b3d02;
+    color: #00eeff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -215,18 +208,20 @@ section {
     margin-left: 0px;
     background-color: transparent;
     transition: all 0.11s ease;
+    border: 1px solid rgb(35, 228, 253);
+    color: white;
 }
 
 .text-area button:hover {
-    color: white;
-    background-color: rgb(56, 56, 56);
-    border-color: transparent;
+    color: rgb(61, 240, 216);
+    border: 1px dashed;
 }
 
 .Education_section .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
@@ -238,7 +233,7 @@ section {
     padding: 40px 20px;
     width: 45%;
     border-radius: 5px;
-    box-shadow: 0 0 7px rgba(193, 197, 252, 0.473);
+    box-shadow: 0 0 7px rgba(193, 197, 252, 0.2);
     min-width: 204px;
     transition: all 0.3s ease;
 }
@@ -258,16 +253,28 @@ section {
     position: absolute;
     right: 10px;
     bottom: 10px;
+    color: rgb(206, 214, 255);
+    transition: all 0.3s ease;
+}
+
+.Education_section .cards .card-style .external-link:hover {
+    color: #274eff;
+}
+
+.ieee {
+    color: rgb(206, 214, 255);
+    text-underline-offset: 5px;
+    transition: all 0.3s ease;
 }
 
 .ieee:hover {
-    color: blue;
+    color: rgb(24, 228, 255);
 }
 
 .skills_section {
     width: 100%;
     padding: 50px 13%;
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: rgba(5, 3, 15, 0.856);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +287,7 @@ section {
     bottom: 3px;
     right: 5px;
     font-size: 11px;
-    color: #0c1100;
+    color: #919191;
 }
 
 .skills_head {
@@ -294,10 +301,11 @@ section {
 .skills_head h2 {
     font-size: 30px;
     margin-bottom: -5px;
+    color: #187053;
 }
 
 .skills_head h2 span {
-    color: #e74d06;
+    color: #00ffff;
 }
 
 .skills_main {
@@ -332,7 +340,7 @@ section {
     width: 50%;
     height: 100%;
     position: absolute;
-    background-color: #2ce706;
+    background-color: #ae00ff;
     border-radius: 25px;
 }
 
@@ -474,14 +482,14 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(24, 26, 58, 0.8);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-radius: 10px;
     padding: 20px;
     width: inherit;
     height: 200px;
-    color: #000000;
+    color: #cafff4;
     transition: all 0.3s ease;
     backdrop-filter: blur(3px);
     opacity: 0;
@@ -529,7 +537,9 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
-    background-color: rgba(0, 85, 110, 0.418);
+    padding-top: 10px;
+    border-top: 1px solid rgb(88, 88, 88);
+    background-color: rgba(30, 0, 54, 0.37);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -580,12 +590,32 @@ section {
     margin-bottom: 30px;
     text-decoration: 2px solid rgb(1, 1, 75) underline;
     text-underline-offset: 5px;
+    color: rgb(14, 239, 255);
 }
 
 .social-media i {
     margin-left: 20px;
-    color: blueviolet;
+    color: rgb(150, 150, 150);
     font-size: 25px;
+}
+
+
+.social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
 }
 
 .inst {
@@ -613,24 +643,6 @@ section {
 
 .mail:hover {
     color: #c71610;
-}
-
-.social-icons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons li {
-    margin: 0 10px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    font-size: 24px;
-    transition: all 0.3s ease;
 }
 
 footer {
@@ -663,6 +675,7 @@ footer .logo {
 
 footer .logo:hover {
     transform: rotate(360deg);
+
 }
 
 /*Media Queries*/
@@ -810,7 +823,6 @@ footer .logo:hover {
     .note {
         font-size: 5px;
     }
-    
     .Education_section .cards .card-style{
         min-width: 100%;
         margin: 0px auto;
