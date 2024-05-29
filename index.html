@@ -21,10 +21,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio - Vaibhav Ghanekar</title>
+    <style>
+        .alert-info{
+            background-color: beige;
+            color: red;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            justify-content: space-between;
+        }
+        .alert-info i{
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="alert-info">
+        <p>This website details are not up-to-date as of now. Please refer my <a href="https://github.com/Vaibhav-cls">github page</a> , <a href="https://www.linkedin.com/in/vaibhav-ghanekar-a69a30150/">linkedin profile</a> or <a href="https://drive.google.com/file/d/1AOm1Azo7LUCeS9_Qknl8w9G_qcLFN441/view">resume</a>.The updated site will be online from 01/06/2024</p>
+        <i class="fa fa-xmark cross" title="close"></i>
+    </div>
     <header id="header">
         <div class="header-container">
             <div class="header-right">
@@ -351,6 +372,14 @@
         <a href="#top"><img src="images/angles-up-solid (1).svg"></a>
     </footer>
     <script src="script.js"></script>
+    <script>
+        let xmark = document.querySelector(".cross");
+        let alertTab = document.querySelector(".alert-info");
+        xmark.addEventListener("click",()=>{
+            // alertTab.style.height = "0px";
+            alertTab.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>
