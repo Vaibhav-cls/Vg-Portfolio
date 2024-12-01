@@ -494,7 +494,7 @@ section {
     backdrop-filter: blur(3px);
     opacity: 0;
     z-index: -5;
-    overflow-y: scroll;
+    overflow-y: auto;
     transform: translateY(-100%);
 }
 
