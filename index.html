@@ -340,13 +340,9 @@
               >
             </p>
             <p>
-              <a
-                href="#"
-                target="_blank"
-                class="links"
-              >
-                <i class="fa fa-arrow-right"></i> Ionage Technologies Pvt.
-                Ltd. (Support Engineer Intern)</a
+              <a href="#" target="_blank" class="links">
+                <i class="fa fa-arrow-right"></i> Ionage Technologies Pvt. Ltd.
+                (Support Engineer Intern)</a
               >
             </p>
           </div>
@@ -354,14 +350,25 @@
       </section>
       <section id="project_section">
         <h2>Projects</h2>
-        <!-- <div class="project_toggler">
-            <a href="">All</a>
-            <a href="">Front-End</a>
-            <a href="">backend</a>
-            <a href="">FullStack(MERN)</a>
-        </div> -->
+        <div class="project_toggler">
+          <div class="tabs">
+            <div class="tab-slider"></div>
+            <button class="tab active" id="all" onclick="switchTab(0)">
+              All
+            </button>
+            <button class="tab" id="frontend" onclick="switchTab(1)">
+              Front-End
+            </button>
+            <button class="tab" id="backend" onclick="switchTab(2)">
+              backend
+            </button>
+            <!-- <button class="tab" id="fullstack" onclick="switchTab(3)">
+              FullStack(MERN)
+            </button> -->
+          </div>
+        </div>
         <div class="project_container">
-          <div class="project">
+          <div class="project frontend">
             <img src="images/coffee-shop.JPG" alt="Project 1" />
             <div class="project-info">
               <h3>Coffee Shop</h3>
@@ -383,7 +390,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/polylingo.JPG" alt="Project 2" />
             <div class="project-info">
               <h3>PolyLingo</h3>
@@ -405,7 +412,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/quizee.png" alt="Project 3" />
             <div class="project-info">
               <h3>Quizee</h3>
@@ -428,7 +435,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/inventrom.JPG" alt="Project 4" />
             <div class="project-info">
               <h3>Inventrom Clone</h3>
@@ -450,7 +457,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/todo.JPG" alt="Project 5" />
             <div class="project-info">
               <h3>To-do List</h3>
@@ -460,20 +467,16 @@
                 completed one.
               </p>
               <div style="display: flex; justify-content: space-between">
-                <a
-                  href="https://github.com/Vaibhav-cls/To-Do"
-                  target="_blank"
+                <a href="https://github.com/Vaibhav-cls/To-Do" target="_blank"
                   >View Code <i class="fa fa-external-link"></i
                 ></a>
-                <a
-                  href="https://vaibhav-cls.github.io/To-Do/"
-                  target="_blank"
+                <a href="https://vaibhav-cls.github.io/To-Do/" target="_blank"
                   >Live Project <i class="fa fa-external-link"></i
                 ></a>
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/resumebuilder.PNG" alt="Project 6" />
             <div class="project-info">
               <h3>Express.Resume</h3>
@@ -496,7 +499,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project frontend">
             <img src="images/simon_says.PNG" alt="Project 7" />
             <div class="project-info">
               <h3>Simon Says</h3>
@@ -525,6 +528,90 @@
                 ></a>
               </div>
             </div>
+          </div>
+          <div class="project backend">
+            <img src="images/wanderlust.png" alt="Project 8" />
+            <div class="project-info">
+              <h3>WanderLust</h3>
+              <p>
+                Wanderlust – A seamless property rental platform where users can
+                explore, list, and rent properties with ease. Built for
+                security, efficiency, and a smooth booking experience. 🏡✨
+              </p>
+              <p style="color: rgb(255, 0, 0)">
+                Note: This game will run only on desktop/PC. Do not open it in
+                your mobile/tablet
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                <a
+                  href="https://github.com/Vaibhav-cls/WanderLust"
+                  target="_blank"
+                  >View Code <i class="fa fa-external-link"></i
+                ></a>
+                <a href="https://wanderlust-ahcv.onrender.com/" target="_blank"
+                  >Live Project <i class="fa fa-external-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project backend">
+            <img src="images/legalease.png" alt="Project 9" />
+            <div class="project-info">
+              <h3>
+                LegalEase: Bridging the Gap Between Legal Services and Citizens
+                in India
+              </h3>
+              <p>
+                LegalEase is a platform designed to connect legal service
+                providers with clients, ensuring accessible and incentivized
+                legal assistance. The project focuses on onboarding lawyers and
+                legal professionals, offering them incentives to provide
+                services to those in need.
+              </p>
+              <p style="color: red">
+                Note: This game will run only on desktop/PC. Do not open it in
+                your mobile/tablet
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                <a
+                  href="https://github.com/Vaibhav-cls/LegalEase"
+                  target="_blank"
+                  >View Code <i class="fa fa-external-link"></i
+                ></a>
+                <a
+                  href="https://github.com/Vaibhav-cls/LegalEase"
+                  target="_blank"
+                  >Live Project <i class="fa fa-external-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project backend">
+            <img src="images/taskboard.png" alt="Project 10" />
+            <div class="project-info">
+              <h3>Taskboard: A Role-Based Task Management System</h3>
+              <p>
+                Taskboard is a full-stack web application designed for efficient
+                task management and collaboration with role-based access
+                control. It provides an intuitive interface for assigning,
+                tracking, and managing tasks in real time.
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                <a
+                  href="https://github.com/Vaibhav-cls/TaskBoard"
+                  target="_blank"
+                  >View Code <i class="fa fa-external-link"></i
+                ></a>
+                <a
+                  href="https://github.com/Vaibhav-cls/TaskBoard"
+                  target="_blank"
+                  >Live Project <i class="fa fa-external-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="no-projects-message" style="display: none">
+            Hold on, more projects are coming...
           </div>
         </div>
       </section>
