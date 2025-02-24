@@ -879,7 +879,8 @@ footer .logo:hover {
     margin-top: 10px;
   }
   .tabs {
-    padding: 6px 2rem;
+    padding: 6px 1rem;
+    padding-left: 2.5rem;
     margin: 0px 2rem;
     overflow: hidden;
     border-radius: 20px;
@@ -889,6 +890,6 @@ footer .logo:hover {
     font-size: 12px;
   }
   .tab-slider {
-    width: 25%;
+    width: 22%;
   }
 }

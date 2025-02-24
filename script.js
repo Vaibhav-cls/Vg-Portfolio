@@ -54,7 +54,7 @@ function initializeSlider() {
     const tabSlider = document.querySelector('.tab-slider');
 
     // Set the slider's initial position
-    tabSlider.style.left = `${tabIndex * 34}%`; // 25% for 4 tabs
+    tabSlider.style.left = `${tabIndex * 39}%`; // 25% for 4 tabs
 
     // Check if projects are visible for the default tab
     switchTab(tabIndex);
@@ -100,5 +100,5 @@ function switchTab(tabIndex) {
 
     // Move tab slider
     const tabSlider = document.querySelector('.tab-slider');
-    tabSlider.style.left = `${tabIndex * 34}%`; // 25% for 4 tabs
+    tabSlider.style.left = `${tabIndex * 39}%`; // 25% for 4 tabs
 }
